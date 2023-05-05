@@ -143,6 +143,16 @@ export const Button = styled("button", {
             color: "$socialLinkedin",
           },
         },
+        ["&.Github"]: {
+          backgroundColor: "$socialGithubBlack",
+          borderColor: "$socialGithubBlack",
+          color: "$socialGithubWhite",
+          "&:hover": {
+            backgroundColor: "transparent",
+            borderColor: "$socialGithubBlack",
+            color: "$socialGithubWhite",
+          },
+        },
         "&:hover": {
           backgroundColor: "$grey5",
         },

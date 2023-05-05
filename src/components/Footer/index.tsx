@@ -3,7 +3,12 @@ import { Text } from "@/styles/Text";
 import { Footer as FooterWrapper } from "./style";
 import { UserImage } from "@/pages/home/style";
 import { userData } from "@/utils/userData";
-import { FaLinkedinIn, FaInstagram, FaFacebookF } from "react-icons/fa";
+import {
+  FaLinkedinIn,
+  FaInstagram,
+  FaFacebookF,
+  FaGithub,
+} from "react-icons/fa";
 import { Button } from "@/styles/Buttons";
 // import { HandEffect } from "../HandEffect";
 
@@ -35,7 +40,7 @@ export const Footer = (): JSX.Element => {
             gap: "$2",
           }}
         >
-          <Button
+          {/* <Button
             className="instagram"
             type="circle"
             as="a"
@@ -52,6 +57,15 @@ export const Footer = (): JSX.Element => {
             href={`https://fb.com/${userData.facebookUser}`}
           >
             <FaFacebookF />
+          </Button> */}
+          <Button
+            className="Github"
+            type="circle"
+            as="a"
+            target="_blank"
+            href={`https://github.com/${userData.githubUser}`}
+          >
+            <FaGithub />
           </Button>
           <Button
             className="linkedin"
